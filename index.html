@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>M</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:white;
+color:black;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+border-bottom:1px solid #ddd;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:10px;
+z-index:1000;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
+/* HEADER ROJO */
+
+.header{
+background:#c40000;
+color:white;
+padding:80px 20px 40px;
+text-align:center;
+margin-top:50px;
+animation:fadeDown 1s;
+}
+
+.header h1{
+margin:0;
+font-size:28px;
+}
+
+.header p{
+margin-top:10px;
+font-size:14px;
+}
+
+/* IMAGEN PRINCIPAL */
+
+.portada img{
+width:100%;
+max-height:350px;
+object-fit:cover;
+animation:fadeIn 1.5s;
+}
+
+/* SECCIONES */
+
+.seccion{
+padding:30px 20px;
+max-width:900px;
+margin:auto;
+animation:fadeInUp 1s;
+}
+
+.seccion h2{
+margin-bottom:10px;
+}
+
+/* GALERIA PINTEREST */
+
+.galeria{
+column-count:3;
+column-gap:10px;
+}
+
+.galeria img{
+width:100%;
+margin-bottom:10px;
+border-radius:10px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+.galeria{
+column-count:2;
+}
+}
+
+@media(max-width:500px){
+.galeria{
+column-count:1;
+}
+}
+
+/* LISTA */
+
+ul li{
+margin-bottom:10px;
+}
+
+/* BOTON */
+
+.boton{
+display:block;
+width:220px;
+margin:40px auto;
+text-align:center;
+padding:15px;
+background:#c40000;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.boton:hover{
+background:black;
+}
+
+/* MODAL INFOGRAFIA */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.modal img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+
+.modal span{
+position:absolute;
+top:20px;
+right:30px;
+color:white;
+font-size:30px;
+cursor:pointer;
+}
+
+/* ANIMACIONES */
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes fadeInUp{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeDown{
+from{opacity:0; transform:translateY(-20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#resumen">Resumen</a>
+<a href="#info">Información</a>
+<a href="#imagenes">Imágenes</a>
+<a href="#ideas">Ideas</a>
+</nav>
+
+<!-- HEADER -->
+
+<div class="header" id="inicio">
+<h1>Política neoliberal con los gobiernos Vicente Fox Quesada, Felipe Calderón y Enrique Peña Nieto</h1>
+<p>Miriam Velasco Gaytán 2-13</p>
+</div>
+
+<!-- PORTADA -->
+
+<div class="portada">
+<img src="portada.jpg">
+</div>
+
+<!-- RESUMEN -->
+
+<div class="seccion" id="resumen">
+<h2>resumen</h2>
+<p>
+el neoliberalismo en México durante los gobiernos de Vicente Fox, Felipe Calderón y Enrique Peña Nieto
+se caracterizó por la apertura económica, la privatización de sectores estratégicos y la reducción del papel del Estado.
+Estas políticas buscaban impulsar el crecimiento económico mediante la inversión privada y el libre mercado,
+aunque también generaron críticas por la desigualdad social.
+</p>
+</div>
+
+<!-- INFORMACION EXTRA -->
+
+<div class="seccion" id="info">
+<h2>información</h2>
+<p>
+durante el gobierno de Vicente Fox (2000-2006), se continuaron las políticas neoliberales iniciadas en décadas anteriores,
+manteniendo la apertura comercial y promoviendo la inversión extranjera. En el sexenio de Felipe Calderón (2006-2012),
+se reforzaron estas políticas, aunque su gobierno también estuvo marcado por la lucha contra el narcotráfico, lo que impactó
+la estabilidad social y económica del país.
+</p>
+
+<p>
+en el gobierno de Enrique Peña Nieto (2012-2018), se impulsaron reformas estructurales importantes, como la energética y educativa,
+buscando modernizar el país y atraer más inversión privada. Sin embargo, estas reformas generaron controversia,
+ya que muchos sectores consideraron que beneficiaban más a empresas privadas que a la población en general.
+</p>
+</div>
+
+<!-- GALERIA -->
+
+<div class="seccion" id="imagenes">
+<h2>Imágenes</h2>
+
+<div class="galeria">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+</div>
+
+</div>
+
+<!-- IDEAS -->
+
+<div class="seccion" id="ideas">
+<h2>lluvia de ideas / punto de vista</h2>
+
+<ul>
+<li>el neoliberalismo busca crecimiento económico, pero no siempre beneficia a todos.</li>
+<li>En estos gobiernos hubo avances económicos, pero también desigualdad social.</li>
+<li>Las reformas estructurales generaron tanto beneficios como inconformidad.</li>
+<li>El papel del Estado se redujo en varias áreas importantes.</li>
+<li>Desde mi punto de vista, es importante encontrar un equilibrio entre el mercado y el bienestar social.</li>
+</ul>
+
+</div>
+
+<!-- BOTON -->
+
+<a href="#" class="boton" onclick="abrirModal()">Ver infografía</a>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+<span onclick="cerrarModal()">✖</span>
+<img src="infografia.jpg">
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function abrirModal(){
+document.getElementById("modal").style.display="flex";
+}
+
+function cerrarModal(){
+document.getElementById("modal").style.display="none";
+}
+
+</script>
+
+</body>
+</html> 
